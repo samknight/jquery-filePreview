@@ -14,27 +14,33 @@ Add in the following line to the page's head after loading jQuery.
   
 Then you need to initialise the File Preview plugin, defining which file input field you wish to preview
 
+```javascript
   <script>
     $(document).ready(function(){
       $("#file_field").filePreview();
     });
   </script>
+```
   
   You will also need to create a block element to show the file preview. By default this
   will be the id for file input field chosen with `_preview` appended i.e `file_field_preview`
   
+```html
   <input id='file_field' type='file' />
   <div id='file_field_preview'></div>
+```
 
 ### Customise
 
 You can override the preview output element by defining an option
 
+```javascript
   <script>
     $(document).ready(function(){
       $("#file_field").filePreview({ previewElement: 'custom_area' });
     });
   </script>
+```
 
 ### Credits
 
